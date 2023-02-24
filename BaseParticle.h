@@ -1,6 +1,6 @@
 #ifndef _BaseParticle_h_
 #define _BaseParticle_h_
-b
+
 #include "v2d.h"
 
 class BaseParticle

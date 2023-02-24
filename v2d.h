@@ -1,6 +1,6 @@
 #ifndef _v2d_h_
 #define _v2d_h_
-b
+
 #include <FixedPoints.h>
 #include <FixedPointsCommon.h>
 

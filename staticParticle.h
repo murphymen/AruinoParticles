@@ -1,6 +1,6 @@
 #ifndef _staticParticle_h_
 #define _staticParticle_h_
-b
+
 #include "BaseParticle.h"
 
 class staticParticle:BaseParticle
