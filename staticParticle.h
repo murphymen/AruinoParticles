@@ -3,7 +3,7 @@
 
 #include "BaseParticle.h"
 
-class staticParticle:BaseParticle
+class staticParticle:public BaseParticle
 {
 public:
 

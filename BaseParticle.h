@@ -10,7 +10,7 @@ public:
   uint16_t  live_time;
 
 
-  virtual void  update() = 0;
+  virtual void  update(){};
 };
 
 
