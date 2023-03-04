@@ -6,14 +6,16 @@
 class movingParticle:public BaseParticle
 {
 public:
+  v2d velocity;
 
-  void  update() override;
+  void  update();
 };
 
 void movingParticle::update()
 {
-  position = position + 2.5f;
-  position.print("position");
+  //position = position + velocity;
+  //position.print("position");
+  Serial.println("movingPart");
 }
 
 #endif 

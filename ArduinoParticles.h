@@ -10,7 +10,7 @@ class ArduinoParticles
 private:
   PooledList<BaseParticle> particles;
 public:
-  staticParticle p;
+  //staticParticle p;
 
 
   ArduinoParticles();
@@ -19,7 +19,10 @@ public:
 
 ArduinoParticles::ArduinoParticles()
 {
-  staticParticle sp;
+  //staticParticle sp;
+  v2d p(1, 1);
+  CHSV c(10,0,0);
+  //sp.set(p, c);
   movingParticle mp;
   particles.push_back(sp);
   particles.push_back(mp);
@@ -27,6 +30,19 @@ ArduinoParticles::ArduinoParticles()
 
 void ArduinoParticles::update()
 {
-  
+  /*
+  PooledList<BaseParticle>::iterator i = particles.begin();
+  while (i != particles.end()) 
+  {
+    BaseParticle tmp = *i;
+    tmp.update();
+    ++i;
+  }
+  */
+
+  for(auto& p : particles)
+  {
+    p.update();
+  }
 }
 #endif 

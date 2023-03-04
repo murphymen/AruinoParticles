@@ -7,10 +7,10 @@ class BaseParticle
 {
 public:
   v2d       position;
-  uint16_t  live_time;
+  uint16_t  life_time;
 
 
-  virtual void  update(){};
+  virtual void  update();
 };
 
 
